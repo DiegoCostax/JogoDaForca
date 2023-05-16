@@ -31,7 +31,7 @@ function retornaLetra(e){
 
 function tentativa(letra){
     if (palavraProposta.includes(letra)){
-        atualizaPavraInterface(letra);
+        atualizapalavrainterface(letra);
     }else{
         letrasErradasArray.push(letra);
         letrasErradas.innerHTML = "Letras erradas:" + letrasErradasArray;
@@ -54,7 +54,7 @@ function verificaFimDeJogo(){
 }
 
 
-function atualizaPavraInterface(letra){
+function atualizapalavrainterface(letra){
     let palavraAux = "";
     for(i=0;i<palavraProposta.length;i++){
         if(palavraProposta[i] === letra){
